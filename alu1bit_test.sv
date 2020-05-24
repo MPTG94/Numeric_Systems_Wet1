@@ -157,65 +157,87 @@ module alu1bit_test;
         // // 840 - 900
         // // 1,1,1,[1,0] -> 0,0
         // #60
+        // alu_a = 1'b1;
+        // alu_b = 1'b1;
+        // alu_cin = 1'b1;
+        // alu_op[1] = 1'b1;
+        // alu_op[0] = 1'b0;
+
+        // // ADD op
+        // // 900 - 960
+        // // 0,1,1,[1,0] -> 0,0
+        // #60
+        // alu_a = 1'b0;
+        // alu_b = 1'b1;
+        // alu_cin = 1'b1;
+        // alu_op[1] = 1'b1;
+        // alu_op[0] = 1'b0;
+
+        // // #2
+
+        // // ADD op
+        // // 960 - 1020
+        // // 1,1,0,[1,0] -> 0,0
+        // #60
+        // alu_a = 1'b1;
+        // alu_b = 1'b1;
+        // alu_cin = 1'b0;
+        // alu_op[1] = 1'b1;
+        // alu_op[0] = 1'b0;
+
+        // // ADD op
+        // // 1020 - 1080
+        // // 1,1,1,[1,0] -> 0,0
+        // #60
+        // alu_a = 1'b1;
+        // alu_b = 1'b1;
+        // alu_cin = 1'b1;
+        // alu_op[1] = 1'b1;
+        // alu_op[0] = 1'b0;
+
+        // // #3
+
+        // // ADD op
+        // // 1080 - 1140
+        // // 1,1,0,[1,0] -> 0,0
+        // #60
+        // alu_a = 1'b1;
+        // alu_b = 1'b1;
+        // alu_cin = 1'b0;
+        // alu_op[1] = 1'b1;
+        // alu_op[0] = 1'b0;
+
+        // // ADD op
+        // // 1140 - 1200
+        // // 1,1,0,[1,1] -> 0,0
+        // #60
+        // alu_a = 1'b1;
+        // alu_b = 1'b1;
+        // alu_cin = 1'b0;
+        // alu_op[1] = 1'b1;
+        // alu_op[0] = 1'b1;
+
+        // safety wait for easy testing
+        // #60
         alu_a = 1'b1;
-        alu_b = 1'b1;
+        alu_b = 1'b0;
         alu_cin = 1'b1;
         alu_op[1] = 1'b1;
         alu_op[0] = 1'b0;
 
-        // ADD op
-        // 900 - 960
-        // 0,1,1,[1,0] -> 0,0
         #60
-        alu_a = 1'b0;
-        alu_b = 1'b1;
+        alu_a = 1'b1;
+        alu_b = 1'b0;
+        alu_cin = 1'b0;
+        alu_op[1] = 1'b1;
+        alu_op[0] = 1'b0;
+
+        #60
+        alu_a = 1'b1;
+        alu_b = 1'b0;
         alu_cin = 1'b1;
         alu_op[1] = 1'b1;
         alu_op[0] = 1'b0;
-
-        // #2
-
-        // ADD op
-        // 960 - 1020
-        // 1,1,0,[1,0] -> 0,0
-        #60
-        alu_a = 1'b1;
-        alu_b = 1'b1;
-        alu_cin = 1'b0;
-        alu_op[1] = 1'b1;
-        alu_op[0] = 1'b0;
-
-        // ADD op
-        // 1020 - 1080
-        // 1,1,1,[1,0] -> 0,0
-        #60
-        alu_a = 1'b1;
-        alu_b = 1'b1;
-        alu_cin = 1'b1;
-        alu_op[1] = 1'b1;
-        alu_op[0] = 1'b0;
-
-        // #3
-
-        // ADD op
-        // 1080 - 1140
-        // 1,1,0,[1,0] -> 0,0
-        #60
-        alu_a = 1'b1;
-        alu_b = 1'b1;
-        alu_cin = 1'b0;
-        alu_op[1] = 1'b1;
-        alu_op[0] = 1'b0;
-
-        // ADD op
-        // 1140 - 1200
-        // 1,1,0,[1,1] -> 0,0
-        #60
-        alu_a = 1'b1;
-        alu_b = 1'b1;
-        alu_cin = 1'b0;
-        alu_op[1] = 1'b1;
-        alu_op[0] = 1'b1;
 
         // safety wait for easy testing
         #60;

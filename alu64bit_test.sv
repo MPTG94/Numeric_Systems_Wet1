@@ -25,7 +25,7 @@ module alu64bit_test;
         // [1*],[0*],0,1,0 - [1*],0
         alu64bit_a = {64{1'b1}};
         alu64bit_b = {64{1'b0}};
-        alu64bit_cin = 1'b0;
+        alu64bit_cin = 1'b1;
         alu64bit_op[1] = 1'b1;
         alu64bit_op[0] = 1'b0;
 
@@ -35,7 +35,8 @@ module alu64bit_test;
         #2000;
         alu64bit_a = {64{1'b1}};
         alu64bit_b = {64{1'b0}};
-        alu64bit_cin = 1'b1;
+        //alu64bit_b[0] = 1'b1;
+        alu64bit_cin = 1'b0;
         alu64bit_op[1] = 1'b1;
         alu64bit_op[0] = 1'b0;
 
