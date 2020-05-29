@@ -20,7 +20,6 @@ module alu64bit_test;
     );
 
     initial begin
-        // alu64 takes 1932ns to stabilize
         // 0 - 2000
         // [1*],[0*],0,1,0 - [1*],0
         alu64bit_a = {64{1'b1}};
@@ -29,7 +28,6 @@ module alu64bit_test;
         alu64bit_op[1] = 1'b1;
         alu64bit_op[0] = 1'b0;
 
-        // alu64 takes 1932ns to stabilize
         // 0 - 2000
         // [1*],[0*],1,1,0 - [0*],1
         #2000;
